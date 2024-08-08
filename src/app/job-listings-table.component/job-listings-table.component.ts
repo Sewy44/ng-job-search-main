@@ -8,7 +8,7 @@ import { JobListing } from "../models";
     styleUrl: './job-listings-table.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class JobsTableComponent{
+export class JobListingsTableComponent{
 
     @Input({required: true})
     jobListingsData!: JobListing[];
