@@ -1,0 +1,16 @@
+<table>
+    <tbody>
+    @if(isLoading){
+    <div class="spinner-table">
+        <div class="spinner primary"></div>
+    </div>
+    }
+    @for(job of jobListingsData; track job.id){
+        <tr>
+            <td class="logoImage"><img [src]="job.companyLogo"></td>
+            <td><h4 class="jobTitle">{{job.title}}</h4><p class="jobCompany">{{job.companyName}} Reference - {{job.reference}}</p></td>
+            <td class="favoriteIcon"><span class="icon-star"></span></td>
+        </tr>
+    }
+    </tbody>
+</table>

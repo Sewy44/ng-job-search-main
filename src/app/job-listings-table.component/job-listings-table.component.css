@@ -1,0 +1,34 @@
+table {
+    table-layout: fixed;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.logoImage {
+    max-width: 80px;
+    min-width: 80px;
+}
+
+.favoriteIcon {
+    max-width: 20px;
+    min-width: 20px;
+}
+
+.jobTitle {
+    max-width: 600px;
+    min-width: 600px;
+    margin-top: 0px;
+}
+
+.icon-star {
+    margin-top: 30px;
+}
+
+.jobCompany {
+    font-size: small;
+}
+
+img {
+    margin: auto;
+    display: block;
+  }
