@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { JobsViewComponent } from './jobs-view/jobs-view.component';
+import { JobListingsViewComponent } from './job-listings-view/job-listings-view.component';
 
 export const routes: Routes = [
-    {path: "", component: JobsViewComponent}
+    {path: "", component: JobListingsViewComponent}
 ];
