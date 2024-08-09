@@ -9,7 +9,10 @@
         <tr>
             <td class="logoImage"><img [src]="job.companyLogo"></td>
             <td><h4 class="jobTitle">{{job.title}}</h4><p class="jobCompany">{{job.companyName}} Reference - {{job.reference}}</p></td>
-            <td class="favoriteIcon"><span [class.highlight]="highlighFavorite(job.id)" (click)="toggleFavorite(job.id)" class="icon-star"></span></td>
+            @if(!isFavoriteListingPage){
+                <td class="favoriteIcon"><span [class.highlight]="highlighFavorite(job.id)" (click)="toggleFavorite(job.id)" class="icon-star"></span></td>
+            }
+            
         </tr>
     }
     </tbody>

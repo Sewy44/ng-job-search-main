@@ -21,6 +21,9 @@ export class JobListingsTableComponent{
     @Input()
     isLoading = false;
 
+    @Input()
+    isFavoriteListingPage = false;
+
     highlighFavorite(id: number){
        return this.favoriteJobsService.favoriteListings().includes(id)
     }
