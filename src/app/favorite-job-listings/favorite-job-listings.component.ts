@@ -18,6 +18,7 @@ export class FavoriteJobListingsComponent {
     }
 
     getAllFavoriteJobs(): void {
+        this.jobListingService.getAllJobs()
         this.data = this.jobListingService.getFavoriteJobListings();
     }
 }

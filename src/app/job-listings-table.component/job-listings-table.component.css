@@ -18,6 +18,7 @@ table {
     max-width: 600px;
     min-width: 600px;
     margin-top: 0px;
+    cursor: pointer;
 }
 
 .icon-star {
@@ -31,4 +32,8 @@ table {
 img {
     margin: auto;
     display: block;
-  }
+}
+
+.jobTitle:hover {
+    color: blue
+}
