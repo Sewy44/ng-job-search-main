@@ -1,7 +1,7 @@
-import { Routes } from '@angular/router';
 import { JobListingsViewComponent } from './job-listings-view/job-listings-view.component';
 import { FavoriteJobListingsComponent } from './favorite-job-listings/favorite-job-listings.component';
 import { jobListingDetailsResolver } from './job-listing-details/job-listing-details.resolver';
+import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {path: "", component: JobListingsViewComponent},

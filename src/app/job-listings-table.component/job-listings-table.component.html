@@ -10,7 +10,7 @@
             <td class="logoImage"><img [src]="job.companyLogo"></td>
             <td><h4 class="jobTitle" routerLink="/details/{{job.id}}">{{job.title}}</h4><p class="jobCompany"><strong>Company:</strong>{{job.companyName}}<strong class="reference">Reference:</strong>{{job.reference}}</p></td>
             @if(!isFavoriteListingPage){
-                <td class="favoriteIcon"><span [class.highlight]="highlighFavorite(job.id)" (click)="toggleFavorite(job.id)" class="icon-star"></span></td>
+                <td class="favoriteIcon"><span [class.active]="highlighFavorite(job.id)" (click)="toggleFavorite(job.id)" class="icon-star"></span></td>
             }
         </tr>
     }

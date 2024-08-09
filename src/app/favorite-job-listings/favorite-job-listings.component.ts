@@ -1,7 +1,7 @@
 import { Component, inject, Signal } from "@angular/core";
 import { JobListing } from "../models";
 import { JobListingsTableComponent } from "../job-listings-table.component/job-listings-table.component";
-import { JobListingService } from "../job-listing.service";
+import { JobListingService } from "../services/job-listing.service";
 
 @Component({
     selector: 'app-favorite-job-listings-view',

@@ -1,6 +1,6 @@
 import { Component, inject, Signal } from "@angular/core";
 import { JobListingsTableComponent } from "../job-listings-table.component/job-listings-table.component";
-import { JobListingService } from "../job-listing.service";
+import { JobListingService } from "../services/job-listing.service";
 import { JobListing } from "../models";
 import { CommonModule } from "@angular/common";
 
@@ -8,8 +8,7 @@ import { CommonModule } from "@angular/common";
     selector: "app-job-listings-view",
     standalone: true,
     imports: [CommonModule, JobListingsTableComponent],
-    templateUrl: './job-listings-view.component.html',
-    styleUrl: './job-listings-view.component.css'
+    templateUrl: './job-listings-view.component.html'
 })
 export class JobListingsViewComponent {
     protected jobListingService = inject(JobListingService)

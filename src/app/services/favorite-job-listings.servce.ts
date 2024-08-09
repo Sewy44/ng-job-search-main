@@ -1,5 +1,5 @@
 import { effect, inject, Injectable, signal } from "@angular/core";
-import { JobListingId, JobListingIds } from "./models";
+import { JobListingId, JobListingIds } from "../models";
 import { StorageService } from "./storage.service";
 
 @Injectable({

@@ -34,7 +34,13 @@ header a {
     font-weight: bold;
 }
 
-header a:active {
-    background-color: black;
+.button {
+    background-color: lightblue;
+}
+
+.button.active
+{
+    background-color: #0277bd;
     color: white;
 }
+

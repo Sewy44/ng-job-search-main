@@ -1,7 +1,7 @@
 import { Component, inject, Input } from "@angular/core";
 import { JobListing } from "../models";
-import { FavoriteJobListingsService } from "../favorite-job-listings.servce";
 import { RouterLink, RouterModule } from "@angular/router";
+import { FavoriteJobListingsService } from "../services/favorite-job-listings.servce";
 
 @Component({
     selector: 'app-job-listings-table',
