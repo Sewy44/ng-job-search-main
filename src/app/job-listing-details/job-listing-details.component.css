@@ -1,0 +1,58 @@
+table {
+    table-layout: fixed;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.logoImage {
+    max-width: 80px;
+    min-width: 80px;
+}
+
+strong {
+    margin-right: 5px;
+}
+
+tr {
+    height: 35px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    box-shadow: 0 9px #999;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .companyName, .companyLogo , .typesPill, .industriesPill{
+    float: left;
+  }
+
+  .companyLogo {
+     border: none;
+  }
+
+  .typesPill, .industriesPill{
+    padding: 5px 20px;
+    background-color: #0277bd;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 15px;
+  }
+
+  .typesPill {
+    margin-left: 65px;
+    margin-right: 50px;
+  }
