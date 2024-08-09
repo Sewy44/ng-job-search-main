@@ -1,8 +1,8 @@
 import { inject, Injectable, Signal, signal } from "@angular/core";
-import { JobListing, JobListingDetails, JobListingId } from "./models";
 import { FavoriteJobListingsService } from "./favorite-job-listings.servce";
 import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
+import { JobListing, JobListingDetails, JobListingId } from "../models";
 
 @Injectable({
 providedIn: 'root'

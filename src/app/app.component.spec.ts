@@ -14,7 +14,7 @@ describe('AppComponent', () => {
     mockActivatedRoute = {
       snapshot: {
         paramMap: {
-          get: (key: string) => 'test-value' // Mock implementation of paramMap.get
+          get: (key: string) => 'test-value'
         }
       }
     };
