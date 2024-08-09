@@ -1,15 +1,14 @@
-import { Component, Input } from "@angular/core";
+import { Component} from "@angular/core";
 import { JobListingDetails } from "../models";
-import { CommonModule } from "@angular/common";
+import { CommonModule, DatePipe } from "@angular/common";
 import { ActivatedRoute } from "@angular/router";
-import { BehaviorSubject, Observable } from "rxjs";
 
 @Component({
     selector: 'job-listing-details',
     templateUrl: 'job-listing-details.component.html',
     styleUrl: 'job-listing-details.component.css',
     standalone: true,
-    imports: [CommonModule]
+    imports: [CommonModule, DatePipe]
 
 })
 export class JobListingDetailsComponent {

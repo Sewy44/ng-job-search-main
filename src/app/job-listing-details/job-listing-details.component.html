@@ -1,12 +1,17 @@
-
-<div *ngIf="jobListingDetails">
-    
-   <h1>{{jobListingDetails.companyName}}</h1>  - {{jobListingDetails.title}}
-    
-    {{jobListingDetails.types}} - {{jobListingDetails.industries}}
-    
-    {{jobListingDetails.publishDate}}
-    {{jobListingDetails.reference}}
-    {{jobListingDetails.description}}
-
-</div>
+@if(jobListingDetails.id){
+<table>
+    <thead>
+        <img [src]="jobListingDetails.companyLogo">
+        <h1>{{jobListingDetails.companyName}} - {{jobListingDetails.title}}</h1>
+        {{jobListingDetails.types}} - {{jobListingDetails.industries}}
+    </thead>
+    <tbody>
+        <button (click)="back()" class="primary">Previous Page</button>
+        <tr><p><strong>Publish date:</strong>{{jobListingDetails.publishDate | date: 'shortDate'}}</p></tr>
+        <tr><p><strong>Location:</strong>{{jobListingDetails.location}}</p></tr>
+        <tr><p><strong>Reference:</strong>{{jobListingDetails.reference}}</p></tr>
+        <tr><p><strong>Description:</strong></p></tr>
+        <div [innerHTML]="jobListingDetails.description"></div>
+    </tbody>
+</table>
+}

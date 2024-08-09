@@ -37,3 +37,11 @@ img {
 .jobTitle:hover {
     color: blue
 }
+
+strong {
+    margin-right: 5px;;
+}
+
+.reference {
+    margin-left: 20px;
+}

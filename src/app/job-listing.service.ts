@@ -15,18 +15,7 @@ export class JobListingService {
     readonly isGettingJobs = this.getting.asReadonly();
     private jobListingResults = signal<JobListing[]>([]);
     private favoriteListingResults = signal<JobListing[]>([]);
-    private detailedJobListingResults = signal<JobListingDetails>({
-        industries: [],
-        types: [],
-        description: [],
-        publishDate: [],
-        id: 0,
-        companyName: '',
-        title: '',
-        companyLogo: '',
-        reference: '',
-        location: ''})
-
+    
     getFavoriteJobListings(): Signal<JobListing[]>{
         return this.favoriteListingResults.asReadonly()
     }
