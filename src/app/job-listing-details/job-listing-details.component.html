@@ -1,9 +1,15 @@
 @if(jobListingDetails.id){
 <table>
     <thead>
-        <img [src]="jobListingDetails.companyLogo">
-        <h1>{{jobListingDetails.companyName}} - {{jobListingDetails.title}}</h1>
-        {{jobListingDetails.types}} - {{jobListingDetails.industries}}
+        <div class="col">
+            <div class="row">
+                <img class="companyLogo" [src]="jobListingDetails.companyLogo">
+                <h1 class="companyName">{{jobListingDetails.companyName}} - {{jobListingDetails.title}}</h1>
+            </div>
+            <div>
+                <div class="typesPill">{{jobListingDetails.types}}</div> <div class="industriesPill">{{jobListingDetails.industries}}</div>
+            </div>
+        </div>
     </thead>
     <tbody>
         <button (click)="back()" class="primary">Previous Page</button>

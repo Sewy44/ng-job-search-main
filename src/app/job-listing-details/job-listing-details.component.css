@@ -32,3 +32,27 @@ button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+
+  .companyName, .companyLogo , .typesPill, .industriesPill{
+    float: left;
+  }
+
+  .companyLogo {
+     border: none;
+  }
+
+  .typesPill, .industriesPill{
+    padding: 5px 20px;
+    background-color: #0277bd;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 15px;
+  }
+
+  .typesPill {
+    margin-left: 65px;
+    margin-right: 50px;
+  }
