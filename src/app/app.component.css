@@ -1,0 +1,40 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header .button {
+    margin-right: 10px;
+}
+
+header div {
+    text-align: center;
+}
+
+router-outlet {
+    display: block;
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+header a {
+    width: 25%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+header a:active {
+    background-color: black;
+    color: white;
+}

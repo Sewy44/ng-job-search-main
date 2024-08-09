@@ -13,3 +13,6 @@ export interface JobListingDetails extends JobListing {
     description: string[],
     publishDate: string[]
 }
+
+export type JobListingId = JobListing["id"];
+export type JobListingIds = Array<JobListingId>;
