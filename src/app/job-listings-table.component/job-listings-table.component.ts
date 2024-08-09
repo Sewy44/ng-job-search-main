@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, Input } from "@angular/core";
+import { Component, inject, Input } from "@angular/core";
 import { JobListing } from "../models";
 import { FavoriteJobListingsService } from "../favorite-job-listings.servce";
 import { RouterLink, RouterModule } from "@angular/router";
