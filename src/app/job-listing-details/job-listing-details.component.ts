@@ -1,7 +1,7 @@
 import { Component} from "@angular/core";
 import { JobListingDetails } from "../models";
 import { CommonModule, DatePipe } from "@angular/common";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Data } from "@angular/router";
 
 @Component({
     selector: 'job-listing-details',
@@ -11,6 +11,7 @@ import { ActivatedRoute } from "@angular/router";
     imports: [CommonModule, DatePipe]
 
 })
+
 export class JobListingDetailsComponent {
 
     jobListingDetails = {} as JobListingDetails;
@@ -18,8 +19,8 @@ export class JobListingDetailsComponent {
     constructor(private activatedRoute: ActivatedRoute){}
 
     ngOnInit(): void {
-        this.activatedRoute.data.subscribe((response: any) => {
-            this.jobListingDetails = response.jobListingDetails
+        this.activatedRoute.data.subscribe((response: Data) => {
+            this.jobListingDetails = response["jobListingDetails"]
         });
     }  
 

@@ -3,6 +3,7 @@ import { FavoriteJobListingsComponent } from './favorite-job-listings.component'
 import { HttpClientModule } from '@angular/common/http';
 import { JobListingService } from '../services/job-listing.service';
 import { JobListing } from '../models';
+import { Signal } from '@angular/core';
 
 class MockSignal<T> {
   constructor(private _value: T) {}
@@ -21,10 +22,10 @@ describe('FavoriteJobListingsComponent', () => {
     mockJobListingService = jasmine.createSpyObj('JobListingService', ['getAllJobs', 'getFavoriteJobListings']);
     
     const mockJobListingsSignal = new MockSignal<JobListing[]>([]);
-    mockJobListingService.getAllJobs.and.returnValue(mockJobListingsSignal as any);
+    mockJobListingService.getAllJobs.and.returnValue(mockJobListingsSignal as unknown as Signal<JobListing[]>);
 
     const mockFavoriteJobListingsSignal = new MockSignal<JobListing[]>([]);
-    mockJobListingService.getFavoriteJobListings.and.returnValue(mockFavoriteJobListingsSignal as any);
+    mockJobListingService.getFavoriteJobListings.and.returnValue(mockFavoriteJobListingsSignal as unknown as Signal<JobListing[]>);
     
     await TestBed.configureTestingModule({
       imports: [FavoriteJobListingsComponent, HttpClientModule]
