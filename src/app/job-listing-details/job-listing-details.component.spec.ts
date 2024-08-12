@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 describe('JobListingDetailsComponent', () => {
   let component: JobListingDetailsComponent;
   let fixture: ComponentFixture<JobListingDetailsComponent>;
-  let mockActivatedRoute: any;
+  let mockActivatedRoute: Partial<ActivatedRoute>;
 
   beforeEach(async () => {
     mockActivatedRoute = {
