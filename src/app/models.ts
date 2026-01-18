@@ -10,8 +10,8 @@ export interface JobListing {
 export interface JobListingDetails extends JobListing {
     industries: string[],
     types: string[],
-    description: string[],
-    publishDate: Date
+    description: string,
+    publishDate: string
 }
 
 export type JobListingId = JobListing["id"];
